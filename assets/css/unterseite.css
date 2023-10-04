@@ -1,3 +1,77 @@
+/*
+selector {
+    eigenschaft: wert;
+}
+*/
+
+/*
+Erleichterung für responsives Webdesign
+*/
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family:Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
 h1 {
     color:blueviolet;
+}
+
+/* Textabsatz soll gelbe Schrift auf blauem Hintergrund haben */
+
+p {
+    color: yellow;
+    background-color: blue;
+    margin: 0;
+    width: 100%;
+    padding: 50px;
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    border-bottom: 0;
+    /* in einer Zeile möglich: border: 2px black solid; */
+
+}
+
+/* Eine ID wird zu einer Raute in CSS und eine ID darf in einem HTML nur einmal vorgekommen. In CSS kannst du die ID öfter verwenden.*/
+
+.last-child{
+    border-bottom: 2px solid red;
+}
+
+#lorem{
+    color: white;
+    background-color: green;
+}
+
+
+/* Eine Klasse in HTML wird zu einem . (Punkt) in CSS. Eine Klasse darf ich hingegen öfter verwenden! Eine Klasse ist einer ID immer übergeordnet */
+.zebra{
+    background-color: black;
+    color: white;
+}
+
+.link{
+    background-color: greenyellow;
+    color: white;
+}
+
+img {
+    margin-top:10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+
+/* Bitte einen Rahmen von 2px Stärke in der Farbe Schwarz um alle Ps
+*/
+
+.center {
+    margin: auto;
+    max-width: 900px;
+    padding: 0 32px;
 }
